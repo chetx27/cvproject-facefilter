@@ -1,0 +1,180 @@
+# CV PROJECT - FACE FILTER
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.5+-green.svg)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10+-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+A real-time face edge detection and face shape classification system using MediaPipe and OpenCV. Features ultra-precise edge tracking with 21 landmark points and accurate face shape detection across 7 categories.
+
+## ✨ Features
+
+- **Real-time Face Edge Detection**: Ultra-thin, precise blue outline tracking your face contour
+- **21 Landmark Points**: Strategically placed points across forehead, temples, cheeks, jawline, and chin
+- **Face Shape Classification**: Detects 7 face shapes with high accuracy:
+  - Oval
+  - Round
+  - Square
+  - Heart
+  - Diamond
+  - Oblong
+  - Triangle
+- **Temporal Smoothing**: Advanced stabilization for zero jitter
+- **Image Adjustments**:
+  - Brightness control
+  - Saturation adjustment
+  - Black & White toggle
+- **Professional UI**: Clean, minimal interface with real-time statistics
+
+## 🎯 Demo
+
+The system provides:
+- **Dark Blue Lines**: Face edge outline (1px precision)
+- **Light Blue Dots**: 21 stable landmark points on face perimeter
+- **Face Shape Display**: Locked shape after 50-sample analysis
+
+## 📋 Requirements
+
+```txt
+opencv-python>=4.5.0
+mediapipe>=0.10.0
+numpy>=1.21.0
+```
+
+## 🚀 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/chetx27/CV PROJECT - FACE FILTER.git
+cd CV PROJECT - FACE FILTER
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the application:
+```bash
+python face_detection.py
+```
+
+## 🎮 Controls
+
+| Key | Function |
+|-----|----------|
+| `Q` / `ESC` | Quit application |
+| `+` / `=` | Increase brightness |
+| `-` | Decrease brightness |
+| `W` | Increase saturation |
+| `S` | Decrease saturation |
+| `SPACE` | Toggle Black & White mode |
+| `R` | Reset face shape detection |
+
+## 🔬 How It Works
+
+### Face Edge Detection
+- Uses MediaPipe's FaceMesh with 95% detection confidence
+- Tracks 36 facial landmarks forming the face oval
+- Applies weighted temporal smoothing (8-frame buffer)
+- Selects 21 strategic points for visualization
+
+### Face Shape Detection
+The algorithm measures:
+1. **Face Length to Width Ratio**: Overall face proportions
+2. **Jaw to Cheek Ratio**: Jaw tapering analysis
+3. **Forehead to Cheek Ratio**: Upper face width
+4. **Temple Width**: Midface narrowing detection
+
+**Classification Logic:**
+- Collects 50 samples over ~2-3 seconds
+- Requires 60% consistency (30/50) to lock result
+- Uses majority voting for final classification
+- Once locked, the result remains stable
+
+### Shape Categories
+
+| Shape | Characteristics |
+|-------|----------------|
+| **Oval** | Balanced proportions, slightly longer than wide |
+| **Round** | Short face, equal width throughout |
+| **Square** | Angular jaw, balanced width, short face |
+| **Heart** | Wide forehead, narrow pointed chin |
+| **Diamond** | Wide cheeks, narrow forehead & jaw |
+| **Oblong** | Long face, similar width throughout |
+| **Triangle** | Narrow forehead, wide jaw |
+
+## 📊 Technical Details
+
+- **Resolution**: 1920x1080 (Full HD)
+- **Frame Rate**: Real-time (30+ FPS on modern hardware)
+- **Detection Confidence**: 95%
+- **Tracking Confidence**: 95%
+- **Smoothing Buffer**: 8 frames
+- **Shape Analysis**: 50-sample consensus
+
+## 🛠️ Project Structure
+
+```
+CV PROJECT - FACE FILTER/
+│
+├── face_detection.py       # Main application
+├── requirements.txt        # Python dependencies
+├── README.md              # This file
+├── LICENSE                # MIT License
+└── .gitignore            # Git ignore file
+```
+
+## 📝 Example Output
+
+Console output when face shape is detected:
+```
+✓ Face Shape Detected: Oval
+  Confidence: 42/50 samples
+  All detections: {'Oval': 42, 'Round': 5, 'Square': 3}
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [MediaPipe](https://google.github.io/mediapipe/) by Google for facial landmark detection
+- [OpenCV](https://opencv.org/) for computer vision operations
+- Face shape classification research and anthropometric standards
+
+## 📧 Contact
+
+chetx27 - GitHub: [@chetx27](https://github.com/chetx27)
+
+Project Link: [https://github.com/chetx27/CV PROJECT - FACE FILTER](https://github.com/chetx27/CV PROJECT - FACE FILTER)
+
+## 🐛 Known Issues
+
+- Requires good lighting for optimal detection
+- May need adjustment for extreme camera angles
+- First detection takes 2-3 seconds for accuracy
+
+## 🔮 Future Enhancements
+
+- [ ] Save/export face measurements
+- [ ] Multiple face detection support
+- [ ] Face shape statistics and analysis
+- [ ] Custom landmark point configuration
+- [ ] Video file processing support
+- [ ] Face shape recommendations (hairstyles, glasses, etc.)
+
+---
+
+**Note**: This application requires a webcam and runs in real-time. Make sure your camera is connected and permissions are granted.

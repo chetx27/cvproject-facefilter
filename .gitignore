@@ -1,0 +1,20 @@
+# Python junk
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (The likely culprit!)
+venv/
+env/
+.env/
+mp-env/
+cv-env/
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Large files
+*.mp4
+*.avi
+*.mov
