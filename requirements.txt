@@ -1,3 +1,14 @@
+# Core dependencies
 opencv-python>=4.5.0
 mediapipe>=0.10.0
 numpy>=1.21.0
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+
+# Development dependencies
+flake8>=6.0.0
+black>=23.0.0
+pylint>=2.17.0
