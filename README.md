@@ -244,19 +244,6 @@ Project Link: [https://github.com/chetx27/cvproject-facefilter](https://github.c
 - First detection takes 2-3 seconds for accuracy
 - Emotion detection accuracy varies with lighting and facial expressions intensity
 
-## 🔮 Future Enhancements
-
-- [x] Emotion recognition system
-- [ ] Save/export face measurements and emotion data
-- [ ] Multiple face detection support
-- [ ] Face shape statistics and analysis
-- [ ] Machine learning model training for emotion classification
-- [ ] Video file processing support
-- [ ] Face shape recommendations (hairstyles, glasses, etc.)
-- [ ] Emotion dataset collection and export
-- [ ] Real-time emotion graphing
-- [ ] Integration with mental health applications
-
 ---
 
 **Note**: This application requires a webcam and runs in real-time. Make sure your camera is connected and permissions are granted.
