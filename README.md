@@ -14,7 +14,7 @@ A real-time face edge detection, face shape classification, and emotion recognit
 - **21 Landmark Points**: Strategically placed points across forehead, temples, cheeks, jawline, and chin
 - **Face Shape Classification**: Detects 7 face shapes with high accuracy:
   - Oval, Round, Square, Heart, Diamond, Oblong, Triangle
-- **Emotion Recognition** 🆕: Real-time emotion detection using facial geometry:
+- **Emotion Recognition** : Real-time emotion detection using facial geometry:
   - Happy, Sad, Angry, Surprised, Neutral, Disgusted, Fearful
 - **Temporal Smoothing**: Advanced stabilization for zero jitter
 - **Image Adjustments**:
@@ -23,7 +23,7 @@ A real-time face edge detection, face shape classification, and emotion recognit
   - Black & White toggle
 - **Professional UI**: Clean interface with real-time statistics and emotion feedback
 
-## 🎯 Demo
+## Demo
 
 The system provides:
 - **Dark Blue Lines**: Face edge outline (1px precision)
@@ -32,7 +32,7 @@ The system provides:
 - **Emotion Display**: Color-coded real-time emotion with confidence scores
 - **Emotion Statistics**: Session summary showing emotion distribution
 
-## 📋 Requirements
+## Requirements
 
 ```txt
 opencv-python>=4.5.0
@@ -40,7 +40,7 @@ mediapipe>=0.10.0
 numpy>=1.21.0
 ```
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -65,7 +65,7 @@ python face_filter.py
 python face_emotion_analysis.py
 ```
 
-## 🎮 Controls
+## Controls
 
 | Key | Function |
 |-----|----------|
@@ -78,7 +78,7 @@ python face_emotion_analysis.py
 | `R` | Reset face shape detection |
 | `E` | Toggle emotion display (emotion version only) |
 
-## 🔬 How It Works
+## How It Works
 
 ### Face Edge Detection
 - Uses MediaPipe's FaceMesh with 95% detection confidence
@@ -159,7 +159,7 @@ The emotion detection system uses **Facial Action Units (AU)** analysis:
 - **Shape Analysis**: 50-sample consensus
 - **Emotion History**: 300 frames (10 seconds)
 
-## 🛠️ Project Structure
+## Project Structure
 
 ```
 cvproject-facefilter/
@@ -173,13 +173,13 @@ cvproject-facefilter/
 └── .gitignore                # Git ignore file
 ```
 
-## 📝 Example Output
+## Example Output
 
 **Face Shape Detection:**
 ```
-✓ Face Shape Detected: Oval
-  Confidence: 42/50 samples
-  All detections: {'Oval': 42, 'Round': 5, 'Square': 3}
+Face Shape Detected: Oval
+Confidence: 42/50 samples
+All detections: {'Oval': 42, 'Round': 5, 'Square': 3}
 ```
 
 **Emotion Statistics (on exit):**
@@ -194,7 +194,7 @@ Fearful: 1.2%
 Disgusted: 0.0%
 ```
 
-## 🎓 Academic Applications
+## Academic Applications
 
 This project demonstrates:
 - **Computer Vision**: Real-time facial landmark detection and tracking
@@ -210,7 +210,7 @@ This project demonstrates:
 - Accessibility applications for emotion awareness
 - Mental health monitoring systems
 
-## 🤝 Contributing
+##Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -224,20 +224,18 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
 - [MediaPipe](https://google.github.io/mediapipe/) by Google for facial landmark detection
 - [OpenCV](https://opencv.org/) for computer vision operations
 - Face shape classification research and anthropometric standards
 - Facial Action Coding System (FACS) for emotion recognition principles
 
-## 📧 Contact
+## Contact
 
 chetx27 - GitHub: [@chetx27](https://github.com/chetx27)
 
 Project Link: [https://github.com/chetx27/cvproject-facefilter](https://github.com/chetx27/cvproject-facefilter)
 
-## 🐛 Known Issues
+## Known Issues
 
 - Requires good lighting for optimal detection
 - May need adjustment for extreme camera angles
@@ -247,5 +245,3 @@ Project Link: [https://github.com/chetx27/cvproject-facefilter](https://github.c
 ---
 
 **Note**: This application requires a webcam and runs in real-time. Make sure your camera is connected and permissions are granted.
-
-**For ETH Zurich Application**: This project demonstrates advanced computer vision techniques, feature engineering, and real-time ML applications suitable for academic research in ML and Data Management.
