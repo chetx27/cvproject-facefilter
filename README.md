@@ -7,7 +7,7 @@
 
 A real-time face edge detection, face shape classification, and emotion recognition system using MediaPipe and OpenCV. Features ultra-precise edge tracking with 21 landmark points, accurate face shape detection across 7 categories, and real-time emotion analysis using facial action units.
 
-## ✨ Features
+## Features
 
 ### Core Features
 - **Real-time Face Edge Detection**: Ultra-thin, precise blue outline tracking your face contour
@@ -99,7 +99,7 @@ The algorithm measures:
 - Uses majority voting for final classification
 - Once locked, the result remains stable
 
-### Emotion Recognition 🆕
+### Emotion Recognition 
 
 The emotion detection system uses **Facial Action Units (AU)** analysis:
 
@@ -148,7 +148,7 @@ The emotion detection system uses **Facial Action Units (AU)** analysis:
 | **Disgusted** | Olive | Wrinkled nose, raised upper lip |
 | **Fearful** | Purple | Wide eyes, tense features |
 
-## 📊 Technical Details
+## Technical Details
 
 - **Resolution**: 1920x1080 (Full HD)
 - **Frame Rate**: Real-time (30+ FPS on modern hardware)
@@ -220,7 +220,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
