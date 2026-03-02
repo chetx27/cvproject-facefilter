@@ -222,8 +222,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 - [MediaPipe](https://google.github.io/mediapipe/) by Google for facial landmark detection
 - [OpenCV](https://opencv.org/) for computer vision operations
 - Face shape classification research and anthropometric standards
