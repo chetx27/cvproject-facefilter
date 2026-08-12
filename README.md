@@ -240,6 +240,3 @@ Project Link: [https://github.com/chetx27/cvproject-facefilter](https://github.c
 - First detection takes 2-3 seconds for accuracy
 - Emotion detection accuracy varies with lighting and facial expressions intensity
 
----
-
-**Note**: This application requires a webcam and runs in real-time. Make sure your camera is connected and permissions are granted.
